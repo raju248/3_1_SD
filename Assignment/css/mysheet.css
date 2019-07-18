@@ -1,6 +1,9 @@
 body{
   background-color: #F5F6F8;
   margin: 0 auto;
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 40px;
 }
 
 .middle{
@@ -9,21 +12,31 @@ body{
 }
 
 .main-image{
-    max-width: 100%;
+
 }
+
 
 .div-line{
   position: relative;
   margin: 5px 0px;
   width:100%;
   font-size:15px; /* add */
-  float: left;
+  /* float: left; */
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-flow: wrap;
+}
+
+.div-out{
+  padding: 0px 10px;
+  width: 33.3%;
 }
 
 .header1{
   padding-top:  20px;
   font-family: arial;
-  line-height: 10px;
+  line-height: 30px;
 }
 
 .header2{
@@ -34,11 +47,13 @@ body{
 .block1{
   background: white;
   display: inline-block;
-  float: left;
-  width: 31.3%;
+  /* float: left; */
+  /* width: 31.3%; */
   /*min-height:22px;*/
   margin: 1%;
 }
+
+
 
 .block-text-header
 {
@@ -50,22 +65,17 @@ body{
 .block-text-address
 {
   font-family: arial;
-  line-height: 10px;
-  padding-left: 20px;
   color: #9D9EB5;
-
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
-.address-overflow
+.block-text-address p
 {
-  position: relative;
-  white-space: nowrap;
+  margin : 8px 20px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 
 .footer-float{
   float : left;
@@ -89,4 +99,40 @@ body{
 .icon{
   padding-left: 15px;
   padding-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main-image{
+      max-width: 100%;
+  }
+
+  .block1{
+    background: white;
+    display: inline-block;
+    /* float: left; */
+    width: 90%;
+    /*min-height:22px;*/
+    margin: 1%;
+  }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+  .main-image{
+      max-width: 100%;
+  }
+
+  .block1{
+    clear: both;
+    background: white;
+    display: inline-block;
+    /* float: left; */
+    width: 48%;
+    /*min-height:22px;*/
+    margin: 1%;
+    float: left;
+  }
+
 }
