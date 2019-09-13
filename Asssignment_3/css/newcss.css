@@ -1,0 +1,81 @@
+.main
+{
+    margin: 100px auto;
+    text-align: center;
+    background-color: rgba(155, 165, 165, 0.24);
+    width: 500px;
+    
+}
+
+.div-block
+{
+    margin: 0 auto;
+    
+    width: 80%;
+    height: 200px;
+    background-color:grey;
+}
+
+
+form
+{
+    margin: 0 auto;
+}
+
+
+.header
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(119, 108, 108);
+}
+
+
+p{
+    margin:0px;
+    text-align: left;
+    color: grey;
+}
+
+.border-danger
+{
+    border-color: grey !important;
+}
+
+
+input
+{
+    margin: 0px;
+    padding: 10px;
+    height: 50px;
+}
+
+.twoInput
+{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+}
+
+#firstName
+{
+    width: 50%;
+}
+
+#lastName
+{
+    width: 50%;
+}
+
+.block1
+{
+    padding: 1px;
+    margin-bottom: 10px;
+}
+
+#email
+{
+    width: 100%;
+}
+
